@@ -18,7 +18,7 @@ function createDefaultGrid(grid=blockSize) {
 }
 
 
-function colorBlackMouseOver () {
+function colorBlackMouseOver() {
     const blocks = document.querySelectorAll(".block-item")
 
     blocks.forEach(block => {
@@ -28,5 +28,39 @@ function colorBlackMouseOver () {
     });
 }
 
+function inputFind() {
+    const inputField = document.querySelector(".input-grid")
+    let value = Number(inputField.value)
+
+    if (typeof value === 'string') {
+        alert("Send a number not string")
+    }
+    return value
+}
+
+function Reset() {
+    const reset = document.querySelector(".reset")
+
+    reset.addEventListener('click', (event) => {
+        blockContainer.innerHTML = ""
+        createDefaultGrid();
+        colorBlackMouseOver()
+    })
+}
+
+function Sumbit() {
+    
+    const sumbit = document.querySelector(".sumbit")
+    sumbit.addEventListener('click', (event) => {
+        let value = inputFind()
+        blockContainer.innerHTML = ""
+        createDefaultGrid(value)
+        colorBlackMouseOver()
+    })
+    
+}
+
 createDefaultGrid()
 colorBlackMouseOver()
+Sumbit()
+Reset()

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -25,4 +26,23 @@ body {
 
 .padd {
     background-color: black;
+}
+
+.main {
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
+.input-grid {
+    border-radius: 5px;
+}
+
+.buttons {
+    margin: 10px;
+}
+
+.sumbit,
+.reset {
+    margin: 10px;
 }
