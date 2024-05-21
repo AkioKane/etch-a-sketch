@@ -44,5 +44,9 @@ body {
 
 .sumbit,
 .reset {
+    border: 2px solid black;
+    border-radius: 5px;
     margin: 10px;
+    padding: 5px;
+    text-align: center;
 }

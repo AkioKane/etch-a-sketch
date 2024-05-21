@@ -53,6 +53,11 @@ function Sumbit() {
     const sumbit = document.querySelector(".sumbit")
     sumbit.addEventListener('click', (event) => {
         let value = inputFind()
+        
+        if (value == "") {
+            alert("Input should be number")
+            value = blockSize
+        }
         blockContainer.innerHTML = ""
         createDefaultGrid(value)
         colorBlackMouseOver()
