@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 20px;
+}
+
+.block-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+.block-item {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+} /* Без размера */
+
+.padd {
+    background-color: black;
+}
